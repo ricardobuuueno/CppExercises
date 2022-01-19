@@ -4,6 +4,7 @@
 #include <tuple>
 #include <string>
 #include "foo.h"
+#include "Int.h"
 
 using namespace std;
 
@@ -12,7 +13,12 @@ int main()
     Foo<int> obj;
     obj.setValue(5);
     cout << endl << obj.getValue() << endl;
-    
+
+    Int iobj(10);
+    cout << (++iobj).getVal() << endl;
+    cout << (iobj++).getVal() << endl;
+    cout << (iobj).getVal() << endl;
+
 }
 
 
