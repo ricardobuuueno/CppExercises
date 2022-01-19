@@ -3,11 +3,42 @@
 #include <algorithm>
 #include <tuple>
 #include <string>
+#include "foo.h"
 
 using namespace std;
 
+int main()
+{
+    Foo<int> obj;
+    obj.setValue(5);
+    cout << endl << obj.getValue() << endl;
+    
+}
 
-class Base {
+
+/*class Foo {
+    int _bar;
+public:
+    Foo() {}
+    Foo(const Foo& obj) {
+        _bar = obj._bar;
+    }
+
+    void setBar(int newBar) { _bar = newBar; }
+};
+
+int main()
+{
+    Foo f1;
+    f1.setBar(10);
+
+    Foo f2 = f1;
+
+    return 0;
+}*/
+
+
+/*class Base {
     int a;
 public:
     Base() { cout << "Constructor" << endl; }
@@ -30,7 +61,7 @@ int main()
     delete[] memory;
     
     return 0;
-}
+}*/
 
 /*class Base {
 public:
