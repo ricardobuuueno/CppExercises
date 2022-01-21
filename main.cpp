@@ -8,7 +8,39 @@
 
 using namespace std;
 
+
 int main()
+{
+
+}
+
+
+/*int main()
+{
+    int number = 7;
+    int count = 0;
+
+    while (number)
+    {
+        count = count + (number & 1);
+        number >>= 1;
+    }
+    cout << count << endl;
+
+    return 0;
+}*/
+
+
+/*int main()
+{
+    int number = 3; // 0011
+
+    int bitPos = 1;
+    int bit = (number >> bitPos) & 1;
+    cout << bit << endl;
+}*/
+
+/*int main()
 {
     Foo<int> obj;
     obj.setValue(5);
@@ -19,7 +51,7 @@ int main()
     cout << (iobj++).getVal() << endl;
     cout << (iobj).getVal() << endl;
 
-}
+}*/
 
 
 /*class Foo {
